@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <section class="image-wrapper">
+        <img
+          class="mobile-image"
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </section>
+      <section class="content-wrapper">
+        <h1>Stay updated!</h1>
+        <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+        <section class="marketing-wrapper">
+          <div class="selling one">
+            <div class="left-seeling">
+            <div class="icon-wrapper">
+              <img class="icon-wrapper-img" src="./assets/images/icon-list.svg" alt="" />
+            </div>
+          </div>
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="selling two">
+            <div class="left-seeling">
+            <div class="icon-wrapper">
+              <img class="icon-wrapper-img" src="./assets/images/icon-list.svg" alt="" />
+            </div>
+            </div>
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="selling three">
+            <div class="left-seeling">
+            <div class="icon-wrapper">
+              <img class="icon-wrapper-img" src="./assets/images/icon-list.svg" alt="" />
+            </div>
+            </div>
+            <p>And much more!</p>
+          </div>
+        </section>
+        <form action="#" method="POST" novalidate>
+          <label for="email">Email address</label><br />
+          <span class="error-message" id="error-message">Valid email required</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+            required
+          /><br />
+          <button class="button subscribe" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <section class="popup-section">
+      <div class="popup-gruping">
+      <div class="popup-img-wrapper">
+        <img class="popup-img" src="./assets/images/icon-success.svg" alt="" />
+      </div>
+      <p class="popup-h1">Thanks for subsribing!</p>
+      <p class="popup-h2">
+        A confirmation email has been sent to <span id="userEmail"></span>.
+        Please open it and click the button inside to confirm your subscription
+      </p>
+    </div>
+      <button class="button dismiss">Dismiss message</button>
+    </section>
+  </body>
+</html>
